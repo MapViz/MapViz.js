@@ -1,0 +1,76 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+.mapviz-fullpage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.mapviz-legend {
+  position: absolute;
+  z-index: 0;
+  opacity: .9;
+  // left: auto;
+  // top: auto;
+}
+
+.mapviz-operator-panel {
+  position: absolute;
+  z-index: 0;
+  opacity: .8;
+  bottom: 50px;
+  text-align: left;
+  background-color: white;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+}
+#operator {
+  width: 20%;
+  height: 450px;
+  right: 20px;
+  top: 150px;
+}
+span.question {
+  cursor: pointer;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #89A4CC;
+  line-height: 16px;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+
+  &:hover {
+    background-color: #3D6199;
+  }
+}
+
+div.tooltip {
+  background-color: white;
+  position: absolute;
+  z-index: 1000000;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  width: auto;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+div.tooltip p {
+  margin: 10px;
+  color: white;
+}
+
+@import "libs/leaflet";
